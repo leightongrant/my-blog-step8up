@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
-		"rootDir": "./src/",
-		"outDir": "./public/assets/js",
+		"rootDir": "/src",
+		"outDir": "public/assets/js",
 		// Base Options recommended for all projects
 		"esModuleInterop": true,
 		"skipLibCheck": true,
@@ -19,7 +19,7 @@
 		// We are not transpiling, so preserve our source code and do not emit files
 		"module": "nodenext",
 		"noEmit": true,
-		"lib": ["ESNext"],
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"rewriteRelativeImportExtensions": true,
 		"erasableSyntaxOnly": true
 	},
