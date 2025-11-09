@@ -2,8 +2,10 @@
 	"name": "my-blog-step8up",
 	"version": "1.0.0",
 	"description": "A full-stack blog application",
+	"type": "module",
 	"scripts": {
-		"dev": "NODE_ENV=development PORT=5000 node --env-file=.env.local --watch-path=./ --watch server.ts && tsc --watch"
+		"dev": "tsc --watch & NODE_ENV=development PORT=5000 node --env-file=.env.local --watch-path=./ --watch server.ts",
+		"build": "tsc"
 	},
 	"repository": {
 		"type": "git",
