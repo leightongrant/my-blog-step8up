@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"rootDir": "./src/",
+		"outDir": "./public/assets/js",
+		// Base Options recommended for all projects
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"target": "esnext",
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+		"allowImportingTsExtensions": true,
+		// Enable strict type checking so you can catch bugs early
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
+		// We are not transpiling, so preserve our source code and do not emit files
+		"module": "nodenext",
+		"noEmit": true,
+		"lib": ["ESNext"],
+		"rewriteRelativeImportExtensions": true,
+		"erasableSyntaxOnly": true
+	},
+	// Include the necessary files for your project
+	"include": ["**/*.ts"],
+	"exclude": ["node_modules", "server.ts", "routes"]
+}
